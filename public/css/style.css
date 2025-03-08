@@ -1,0 +1,79 @@
+/**
+ * Основной CSS файл для приложения
+ */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    border: none;
+}
+
+.btn {
+    border-radius: 4px;
+}
+
+.badge {
+    padding: 6px 10px;
+    margin-right: 5px;
+    border-radius: 4px;
+}
+
+/* Стили для задач */
+.task-item {
+    transition: all 0.3s ease;
+}
+
+.task-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.task-completed {
+    opacity: 0.7;
+}
+
+.task-completed h4 {
+    text-decoration: line-through;
+}
+
+/* Стили для форм */
+.form-control:focus {
+    border-color: #6c757d;
+    box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.25);
+}
+
+/* Стили для кнопок действий */
+.btn-group .btn {
+    margin-right: 2px;
+}
+
+/* Стили для фильтров */
+.filter-section {
+    margin-bottom: 20px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .float-right {
+        float: none !important;
+        margin-top: 10px;
+    }
+    
+    .btn-group {
+        display: flex;
+        width: 100%;
+    }
+    
+    .btn-group .btn {
+        flex: 1;
+    }
+} 
